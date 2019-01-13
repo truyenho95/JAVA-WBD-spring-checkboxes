@@ -16,9 +16,7 @@ public class ChooseController {
 
   @PostMapping("/save")
   public String save(ModelMap model, @RequestParam(value = "giavi") String[] giavi) {
-
     model.addAttribute("giavi", giavi);
     return "index";
-
   }
 }

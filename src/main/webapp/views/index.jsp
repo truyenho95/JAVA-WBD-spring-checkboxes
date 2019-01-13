@@ -12,14 +12,15 @@
   <title>Title</title>
 </head>
 <body>
-<h1>Lua chon gia vi</h1>
+<h1>Sandwich Condiments:</h1>
 <form action="save" method="post">
-  <input type="checkbox" name="giavi" value="Hat Tieu"> Hat Tieu<br>
-  <input type="checkbox" name="giavi" value="Ot"> Ot<br>
-  <input type="checkbox" name="giavi" value="Toi"> Toi<br>
+  <input type="checkbox" name="giavi" value="Lettuce"> Lettuce<br>
+  <input type="checkbox" name="giavi" value="Tomato"> Tomato<br>
+  <input type="checkbox" name="giavi" value="Mustard"> Mustard<br>
+  <input type="checkbox" name="giavi" value="Sprouts"> Sprouts<br>
   <button type="submit">Save</button>
 </form>
-<h2>Ban da chon: </h2>
+<h2>Your Choices: </h2>
 <c:forEach var="gv" items="${giavi}">
   <c:out value="${gv}"/>
 </c:forEach>
